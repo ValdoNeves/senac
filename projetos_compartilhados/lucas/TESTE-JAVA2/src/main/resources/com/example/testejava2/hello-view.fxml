@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="426.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testejava2.HelloController">
+   <children>
+      <TextField fx:id="nota2" layoutX="41.0" layoutY="142.0" />
+      <Label layoutX="51.0" layoutY="53.0" text="Calculator Media Aluno" />
+      <Button fx:id="calcular" layoutX="91.0" layoutY="191.0" mnemonicParsing="false" onAction="#calculadora" text="Calcular" />
+      <TextField fx:id="nota1" layoutX="41.0" layoutY="93.0" />
+      <Label fx:id="resultadomedia" layoutX="262.0" layoutY="125.0" text="Resultado" />
+   </children>
+</AnchorPane>

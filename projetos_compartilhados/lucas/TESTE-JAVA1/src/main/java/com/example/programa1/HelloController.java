@@ -24,7 +24,6 @@ public class HelloController {
         }
 
     }
-
     @FXML
     protected void off() { welcomeText.setText("Acabou"); }
 }
