@@ -1,0 +1,10 @@
+.btn_start{
+-fx-background-color: #6f5cc2;
+
+}
+
+.btn_start:hover{
+-fx-cursor: hand;
+-fx-background-color: #cccccc;
+
+}
