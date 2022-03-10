@@ -49,11 +49,11 @@ public class HelloController {
 
        if(soma >= 7){
 
-           resultadotext.setText("Resultado: Aprovado, Parabens! ");
+           resultadotext.setText("Aprovado, Parabéns! ");
         tela.setStyle("-fx-background-color: linear-gradient(to bottom,#54ff68, #00872d);");
        }
        else {
-           resultadotext.setText("Resultado: Reprovado, SE FODEU! ");
+           resultadotext.setText("Reprovado, Parabéns! ");
            tela.setStyle("-fx-background-color: linear-gradient(to bottom,#ff3d3d, #a00000)");
        }
         resultado.setText("" + soma);
