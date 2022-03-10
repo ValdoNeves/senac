@@ -54,7 +54,7 @@ public class HelloController {
        }
        else {
            resultadotext.setText("Resultado: Reprovado, SE FODEU! ");
-           tela.setStyle("-fx-background-color: linear-gradient(to bottom,#54ff68, #00872d)");
+           tela.setStyle("-fx-background-color: linear-gradient(to bottom,#ff3d3d, #a00000)");
        }
         resultado.setText("" + soma);
     }
