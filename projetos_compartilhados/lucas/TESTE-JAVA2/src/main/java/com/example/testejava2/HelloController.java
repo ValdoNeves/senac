@@ -25,7 +25,6 @@ private TextField nota2;
 @FXML
 private Button calcular;
 
-// media( nota1 + nota2 ) {
 
 @FXML
 protected void calculadora() {
@@ -36,7 +35,6 @@ protected void calculadora() {
     //float media = (parseFloat(valor1) + parseFloat(valor2)) / 2;
 
     resultadomedia.setText("Resultado: " + media);
-
 
 }
 
