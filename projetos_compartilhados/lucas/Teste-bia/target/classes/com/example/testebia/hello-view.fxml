@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.geometry.*?>
@@ -10,8 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0a2351;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testebia.HelloController">
+<AnchorPane fx:id="tela" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom,#023e7d, #001845);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testebia.HelloController">
    <children>
       <Button fx:id="calcular" layoutX="263.0" layoutY="300.0" mnemonicParsing="false" onAction="#Calculadora" style="-fx-background-color: #005F89; -fx-cursor: hand;" text="Calcular" textAlignment="CENTER" textFill="#f8f8f8">
          <padding>
@@ -30,7 +30,7 @@
       <Text fill="WHITE" layoutX="253.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insira sua nota" textAlignment="CENTER" />
       <Text fill="WHITE" layoutX="253.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insira sua nota" textAlignment="CENTER" />
       <Text fill="WHITE" layoutX="252.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insira sua nota" textAlignment="CENTER" />
-      <Label fx:id="resultado" layoutX="179.0" layoutY="219.0" prefHeight="35.0" prefWidth="245.0" style="-fx-background-color: #fff;">
+      <Label fx:id="resultado" layoutX="179.0" layoutY="218.0" prefHeight="35.0" prefWidth="245.0" style="-fx-background-color: #fff;">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>

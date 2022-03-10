@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 
 import static java.lang.Double.parseDouble;
@@ -18,6 +19,9 @@ public class HelloController {
 
     @FXML
     private Text aprovado;
+
+    @FXML
+    private AnchorPane tela;
 
     @FXML
     private Text reprovado;
@@ -46,18 +50,12 @@ public class HelloController {
        if(soma >= 7){
 
            resultadotext.setText("Resultado: Aprovado, Parabens! ");
+        tela.setStyle("-fx-background-color: linear-gradient(to bottom,#54ff68, #00872d);");
        }
        else {
            resultadotext.setText("Resultado: Reprovado, SE FODEU! ");
+           tela.setStyle("-fx-background-color: linear-gradient(to bottom,#54ff68, #00872d)");
        }
-
         resultado.setText("" + soma);
-
-
-
-
-
     }
-
-
 }
