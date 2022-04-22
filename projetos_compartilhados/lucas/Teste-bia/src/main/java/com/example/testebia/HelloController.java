@@ -1,6 +1,6 @@
 package com.example.testebia;
 
-import com.example.actions.Calcular;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -47,7 +47,7 @@ public class HelloController {
 
 
 //       double soma = (parseDouble(n1) + parseDouble(n2) + parseDouble(n3)) /3;
-       double soma = new Calcular().Media(n1, n2, n3);
+       double soma = new Calcular().media(n1, n2, n3);
 
        if(soma >= 7){
 
