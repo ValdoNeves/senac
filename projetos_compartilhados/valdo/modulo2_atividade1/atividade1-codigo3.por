@@ -49,12 +49,12 @@ programa{
 				escreva("Inclua mais "+adicionar+" cadeiras\n")
 			}
 		}
-		se(convidados <= 350 e convidados > lotacaoMaxAlfa){
+		se(convidados <= lotacaoBeta e convidados > lotacaoMaxAlfa){
 			escreva(convidados+" convidados\n")
 			escreva("Use o auditório Beta\n")
 		}
-		se(convidados > 350){
-			escreva("lotacao maxima de 350 cadeiras")
+		se(convidados > lotacaoBeta){
+			escreva("lotacao maxima de "+lotacaoBeta+ "cadeiras")
 		}
 		se(convidados <= 0){
 			escreva("Digite um valor valido por favor")
@@ -68,7 +68,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1734; 
+ * @POSICAO-CURSOR = 1873; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
