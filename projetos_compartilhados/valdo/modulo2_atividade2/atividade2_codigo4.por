@@ -70,7 +70,7 @@ programa{
 				se(idade >= 0 e idade < 5){
 					limpa()
 					diaria = diaria + 0
-					escreva("\n"+hospede +" possui gratuidade\n\n")
+					escreva("\n"+hospede +" possui gratuidade\n")
 					contadorGratuidade++
 				}
 				se(idade > 80){
@@ -82,7 +82,7 @@ programa{
 					}
 					limpa()
 					
-					escreva("\n"+hospede +" paga meia\n\n")
+					escreva("\n"+hospede +" paga meia\n")
 					contadorMeia++
 				}
 				se(idade <= 80 e idade >= 5){
@@ -103,38 +103,31 @@ programa{
 				nomeCrianca = hospede
 				idadeCrianca = idade
 			}senao{
-				escreva("laco idoso 1\n")
+				//escreva("laco idoso 1\n")
 				se(idade > idadeIdoso e idade > idadeAtual){
 					
 						nomeIdoso = hospede
 						idadeIdoso = idade
-						//idadeMax = idade
-						escreva("laco idoso 2\n")
+						//escreva("laco idoso 2\n")
 					
 					
 				}senao{
-					escreva("laco crianca 1\n")
+					//escreva("laco crianca 1\n")
 					se(idade < idadeCrianca e idade < idadeAtual){
 					
 						nomeCrianca = hospede
 						idadeCrianca = idade
-					//	idadeMin = idadeAtual
-						escreva("laco crianca 2\n")
+						//escreva("laco crianca 2\n")
 						
 					}
 				}
 			}
 
-			
-
-					idadeAtual = idade
-			
-						
-			
+			idadeAtual = idade
 			contador++
 			
 			enquanto(flagContinue){
-					escreva("\nDeseja continuar? (S/N)")
+					escreva("\nDeseja continuar? (S/N) ")
 					leia(finalizar)
 					se(finalizar == "S"){
 						hospede = "continua"
@@ -156,15 +149,20 @@ programa{
 			escreva("\n\nReserva negada, no minimo um adulto deve ser o responsável")
 			escreva("\n\nTotal de hospedagens: R$0,00 ; "+ contadorGratuidade+" gratuidade(s) e "+ contadorMeia +" meia(s)")
 			escreva("\ntotalizando " +contador+" hospede(s)")
-			escreva("\nO hóspede mais velho é "+nomeIdoso+" com "+idadeIdoso+" ano(s)")
+			//escreva("\nO hóspede mais velho é "+nomeIdoso+" com "+idadeIdoso+" ano(s)")
 			escreva("\nO hóspede mais jovem é "+nomeCrianca+" com "+idadeCrianca+" ano(s)\n\n")
 			
 		}senao{
 			limpa()
 			escreva("\n\nTotal de hospedagens: R$"+diaria+"; "+ contadorGratuidade+" gratuidade(s) e "+ contadorMeia +" meia(s)")
 			escreva("\ntotalizando " +contador+" hospede(s)")
-			escreva("\nO hóspede mais velho é "+nomeIdoso+" com "+idadeIdoso+" ano(s)")
-			escreva("\nO hóspede mais jovem é "+nomeCrianca+" com "+idadeCrianca+" ano(s)\n\n")
+			se(idadeIdoso == idadeCrianca){
+				escreva("\nUm unico hóspede cadastrado: "+ nomeIdoso +" com "+ idadeIdoso + " ano(s)\n\n")
+			}senao{
+				
+				escreva("\nO hóspede mais velho é "+nomeIdoso+" com "+idadeIdoso+" ano(s)")
+				escreva("\nO hóspede mais jovem é "+nomeCrianca+" com "+idadeCrianca+" ano(s)\n\n")
+			}
 			
 			
 		}
@@ -177,7 +175,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2044; 
+ * @POSICAO-CURSOR = 4290; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
